@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,11 +13,11 @@
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
-    "parcel-plugin-svelte": "^3.0.0",
-    "svelte": "^3.3.0"
+    "parcel-plugin-svelte": "^3.0.1",
+    "svelte": "^3.6.7"
   },
   "dependencies": {
-    "contentful-ui-extensions-sdk": "^3.8.0",
-    "rrule": "^2.6.0"
+    "contentful-ui-extensions-sdk": "^3.9.0",
+    "rrule": "^2.6.2"
   }
 }
