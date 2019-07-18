@@ -20,9 +20,7 @@
 
     rruleResultText = dates.toText()
 
-    if (initiatedExtension) initiatedExtension.field.setValue({
-      value: textValue
-    })
+    if (initiatedExtension) initiatedExtension.field.setValue(textValue)
 
     return dates.all((d, i) => i < 10 ? d : false)
       .map(d => `${d.toLocaleString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}`)
@@ -36,8 +34,8 @@
 
   window.contentfulExtension.init((extension) => {
     initiatedExtension = extension
-    const json = extension.field.getValue()
-    textValue = json.value
+    initiatedExtension.window.startAutoResizer()
+    textValue = initiatedExtension.field.getValue()
   })
 </script>
 
